@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{helper.js, jasmine-fixture.js, jasmine-given.js, jasmine-only.js, jasmine-stealth.js, underscore.js-local}" />
+    <file url="file://$PROJECT_DIR$/vendor" libraries="{jasmine-given}" />
+    <file url="PROJECT" libraries="{underscore.js}" />
   </component>
 </project>
 

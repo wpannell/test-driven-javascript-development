@@ -4,12 +4,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="underscore.js-local" level="project" />
-    <orderEntry type="library" name="jasmine-given.js" level="project" />
-    <orderEntry type="library" name="helper.js" level="project" />
-    <orderEntry type="library" name="jasmine-stealth.js" level="project" />
-    <orderEntry type="library" name="jasmine-only.js" level="project" />
-    <orderEntry type="library" name="jasmine-fixture.js" level="project" />
+    <orderEntry type="library" name="underscore.js" level="project" />
+    <orderEntry type="library" name="jasmine-given" level="project" />
   </component>
 </module>
 

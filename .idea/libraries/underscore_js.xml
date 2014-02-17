@@ -1,12 +1,12 @@
 <component name="libraryTable">
-  <library name="helper.js" type="javaScript">
+  <library name="underscore.js" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/spec/helpers/helper.js" />
+        <item url="file://$PROJECT_DIR$/vendor/js/underscore.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/spec/helpers/helper.js" />
+      <root url="file://$PROJECT_DIR$/vendor/js/underscore.js" />
     </CLASSES>
     <SOURCES />
   </library>
