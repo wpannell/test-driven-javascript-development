@@ -46,5 +46,11 @@ module.exports = function(lineman) {
     //
     // enableAssetFingerprint: true
 
+    spec: {
+      options: {
+        growl: true
+      }
+    }
+
   };
 };
