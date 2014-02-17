@@ -7,4 +7,8 @@ describe "chapter 5", ->
     Then -> 1 == @airity.function1.length
     Then -> 10 == @airity.function10.length
 
+  describe "use the arguments object like an array", ->
+    describe "@chapter5.addToArray([1,'2',3,'four'], 'four', 3,'2',1)", ->
+      Given -> @ra = @chapter5.addToArray([1,'2',3,'four'], 'four', 3,'2',1)
+      Then -> expect([1,'2',3,'four','four',3,'2',1]).toEqual @ra
 
