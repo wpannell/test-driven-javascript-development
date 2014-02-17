@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jasmine-stealth.js" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/spec/helpers/jasmine-stealth.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/spec/helpers/jasmine-stealth.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

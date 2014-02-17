@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="helper.js" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/spec/helpers/helper.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/spec/helpers/helper.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
