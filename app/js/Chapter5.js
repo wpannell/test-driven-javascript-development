@@ -12,3 +12,13 @@ chapter5.Airity = (function() {
 })();
 
 
+chapter5.addToArray = (function() {
+  'use strict';
+  function addToArray() {
+    var targetArr = arguments[0];
+    var add = Array.prototype.slice.call(arguments, 1);
+    return targetArr.concat(add);
+  }
+
+  return addToArray;
+})();
