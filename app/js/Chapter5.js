@@ -22,3 +22,25 @@ chapter5.addToArray = (function() {
 
   return addToArray;
 })();
+
+chapter5.changeFormalParameters = (function() {
+  function changeFormalParameters(a, b) {
+    b = 42;
+    arguments[0] = arguments[1];
+    return a;
+  }
+
+  return changeFormalParameters;
+})();
+
+chapter5.changeFormalParametersE5Strict = (function() {
+  'use strict';
+  function changeFormalParameters(a, b) {
+    b = 42;
+    arguments[0] = arguments[1];
+    return a;
+  }
+
+  return changeFormalParameters;
+})();
+
