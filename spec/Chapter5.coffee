@@ -17,6 +17,32 @@ describe "chapter 5", ->
 
       describe "unless in strict mode --  a recommended practice", ->
         Then -> 42 != changeFormalParametersE5Strict(0,0)
+        Then -> 0 == changeFormalParametersE5Strict(0,0)
 
+  describe "section 5.3", ->
+    describe "declarations are required", ->
+      Then -> expect(accessUndeclaredSomevar).toThrow("someVar is not defined");
 
+    describe "variable declarations are hoisted", ->
+      Then -> expect(hoistUndeclaredIndexvar).not.toThrow();
+
+    describe "variables retain their value outside of block", ->
+      Then -> 5 == retainValueOf_i_OutsideBlock(1,2,3,4,5)
+
+    describe "function declarations are hoisted", ->
+      Then -> 3 == hoistDeclaredExecuteFunction(1,2,3)
+
+    describe "section 5.3.4", ->
+      describe "the global browser object is window", ->
+        Then -> window == global
+        Then -> window == global.window
+        Then -> window == window.window
+
+    describe "section 5.3.5", ->
+      describe "the scope chain", ->
+        Given -> @inc = adder 1
+        Given -> @dec = adder -1
+        Then -> 3 == @inc 2
+        Then -> 3 == @dec 4
+        Then -> 3 == @inc @dec 3
 

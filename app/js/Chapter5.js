@@ -1,3 +1,5 @@
+var global = this;
+
 function Airity() {}
 
 Airity.prototype.function0 = function() {};
@@ -22,4 +24,36 @@ function changeFormalParametersE5Strict(a, b) {
   b = 42;
   arguments[0] = arguments[1];
   return a;
+}
+
+function accessUndeclaredSomevar() {
+  var something = someVar;
+}
+
+function hoistUndeclaredIndexvar() {
+  var something = indexVar;
+  for (var indexVar = 1, l = arguments.length; indexVar < l; indexVar++) {
+  }
+}
+
+function retainValueOf_i_OutsideBlock() {
+  for (var i = 1, l = arguments.length; i < l; i++) {
+  }
+  return i;
+}
+
+function hoistDeclaredExecuteFunction() {
+  var retval = execute(arguments);
+
+  function execute(arg) {
+    return arg.length;
+  }
+
+  return retval;
+}
+
+function adder(base) {
+  return function(num) {
+    return base + num;
+  }
 }
